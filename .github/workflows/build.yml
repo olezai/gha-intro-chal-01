@@ -13,44 +13,44 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+    - uses: actions/checkout@v4
 
-      - name: Print hello from linux
-        run: echo Hello, world!
+    - name: Print hello from linux
+      run: echo Hello, world!
 
-      - name: Get date
-        run: datetime
+    - name: Get date
+      run: datetime
   
   job2:
     runs-on: windows-latest
 
     steps:
-      - uses: actions/checkout@v4
+    - uses: actions/checkout@v4
 
-      - name: Print hellow from windows
-        run: echo Hello, world!
+    - name: Print hellow from windows
+      run: echo Hello, world!
 
-      - name: Get date
-        run: get-date
+    - name: Get date
+      run: get-date
   
   job3:
     runs-on: macos-latest
 
     steps:
-      - uses: actions/checkout@v4
+    - uses: actions/checkout@v4
 
-      - name: Print hello from Mac
-        run: echo Hello, world!
+    - name: Print hello from Mac
+      run: echo Hello, world!
 
-      - name: Get date
-        run: datetime
+    - name: Get date
+      run: datetime
   
   job4:
     needs: [job1,job2,job3]
 
     steps:
-      - uses: actions/checkout@v4
+    - uses: actions/checkout@v4
 
-      - name: Print final message
-        run: echo Hello, world!
+    - name: Print final message
+      run: echo Hello, world!
 
