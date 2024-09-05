@@ -13,7 +13,7 @@ jobs:
       run: echo Hello, world!
 
     - name: Get date
-      run: datetime
+      run: date
   
   job2:
     runs-on: windows-latest
@@ -37,7 +37,7 @@ jobs:
       run: echo Hello, world!
 
     - name: Get date
-      run: datetime
+      run: date
   
   job4:
     needs: [job1,job2,job3]
