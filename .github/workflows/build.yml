@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v3
 
     - name: Print hello from linux
       run: echo Hello, world!
@@ -19,7 +19,7 @@ jobs:
     runs-on: windows-latest
 
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v3
 
     - name: Print hellow from windows
       run: echo Hello, world!
@@ -31,7 +31,7 @@ jobs:
     runs-on: macos-latest
 
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v3
 
     - name: Print hello from Mac
       run: echo Hello, world!
@@ -43,7 +43,7 @@ jobs:
     needs: [job1,job2,job3]
 
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v3
 
     - name: Print final message
       run: echo Hello, world!
